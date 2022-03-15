@@ -14,6 +14,7 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
+    background-image:linear-gradient(rgb(214, 190, 51), rgb(121, 106, 23));
 }
 
 .navbar .logo {
@@ -79,6 +80,11 @@ body {
     border-radius: 30px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: rgb(214, 190, 51);
+    color: #181818;
 }
 
 /* SECTION FOOTER */
