@@ -89,31 +89,19 @@ body {
 
 /* SECTION FOOTER */
 
-.footer {
-    display: grid;
-    height: 80px;
-    align-items: center;
+footer {
     background-color: #181818;
-    color: aliceblue;
-    grid-template-areas: "siguenos social-network";
 }
 
-.footer .siguenos {
-    grid-template-areas: siguenos;
-    text-align: end;
+footer p {
     color: rgb(214, 190, 51);
-}
-
-.footer .social-network {
-    grid-template-areas: social-network;
     text-align: center;
-    font-size: 30px;
 }
 
-.footer .social-network .bx {
-    margin-right: 15px;
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
     color: rgb(214, 190, 51);
-    cursor: pointer;
 }
 
 /* Pagina Historia */
