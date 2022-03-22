@@ -91,15 +91,9 @@ body {
     color: rgb(214, 190, 51);
 }
 
-.hero .btn {
-    font-size: 1em;
-    background: none;
-    color: aliceblue;
-    padding: 10px 20px;
-    border: 1px solid rgb(214, 190, 51);
-    border-radius: 30px;
-    margin-top: 10px;
-    cursor: pointer;
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
 }
 
 .hero .btn:hover {
@@ -160,13 +154,13 @@ footer p {
 /* Pagina Distinciones Individuales */
 
 .body4 {
-    background-image: linear-gradient(rgba(16, 16,16, .3), rgba(16, 16,16, .4)), url(../img/messi\ balones.jpg);
+    background-image: linear-gradient(rgba(16, 16,16, .2), rgba(16, 16,16, .2)), url(../img/messi\ balones.jpg);
     background-size: cover;
     max-width: 100%;
 }
 
 .col {
-    background: rgba(243, 239, 239, 0.6);
+    background: rgba(243, 239, 239, 0.7);
     padding: 0.5em 20em;
 }
 
