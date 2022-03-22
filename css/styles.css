@@ -157,9 +157,26 @@ footer p {
 }
 
 
-
 /* Pagina Distinciones Individuales */
 
 .body4 {
-    background-color:rgb(119, 104, 18) ;
+    background-image: linear-gradient(rgba(16, 16,16, .3), rgba(16, 16,16, .4)), url(../img/messi\ balones.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+
+.col {
+    background: rgba(243, 239, 239, 0.6);
+    padding: 0.5em 20em;
+}
+
+.distinciones__items {
+    text-align: center;
+    color: #1e272e;
+    font-family: 'Roboto Serif', serif;
+    margin: 12px 0;
+}
+
+.container {
+    padding: 1.5em 4em;
 }
