@@ -1,0 +1,140 @@
+/* VARIABLES */
+/* Variables */
+/* GLOBALES */
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Oswald:wght@300&family=Roboto+Serif:ital,wght@0,300;1,100&family=Roboto:wght@300;500&display=swap");
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Globals */
+body {
+  font-family: "Roboto", sans-serif; }
+
+/* PARTIALS */
+/* HEADER & NAVBAR*/
+.navbar {
+  background-color: #d6be33;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  background-image: linear-gradient(#d6be33, #796a17); }
+  .navbar .logo {
+    width: 60px;
+    grid-column: 2 / 3;
+    cursor: pointer; }
+  .navbar .menu {
+    grid-column: 3 / 6;
+    display: flex;
+    justify-content: space-around; }
+  .navbar .menu li {
+    list-style: none;
+    position: relative; }
+    .navbar .menu li::before {
+      content: "";
+      height: 3px;
+      width: 0%;
+      background: #181818;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transition: 0.4s ease-out; }
+    .navbar .menu li a {
+      text-decoration: none;
+      color: #181818;
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.1rem; }
+  .navbar .menu-bar {
+    display: none; }
+
+.navbar .menu li:hover::before {
+  width: 100%; }
+
+/* MEDIAQUERIES */
+@media only screen and (max-width: 700px) {
+  .navbar {
+    position: relative; }
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 8 / 9;
+    font-size: 2em;
+    cursor: pointer; }
+  .navbar .menu {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    background-color: #d6be33;
+    margin-top: 35em;
+    transform: translateX(100%); } }
+
+/* SECTION FOOTER */
+footer {
+  background-color: #181818; }
+  footer p {
+    color: #d6be33;
+    text-align: center; }
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #d6be33; }
+
+/* VIEWS */
+/* SECTION MAIN */
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.3), rgba(16, 16, 16, 0.4)), url(../img/Messiarg.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+  .hero .info-content {
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: aliceblue; }
+  .hero h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300; }
+  .hero h1 {
+    font-size: 5em;
+    color: #d6be33; }
+  .hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em; }
+  .hero .btn:hover {
+    background-color: #d6be33;
+    color: #181818; }
+
+@media only screen and (max-width: 700px) {
+  /* SECTION MAIN */
+  .hero .info-content {
+    grid-column: 2 / 10;
+    grid-row: 4 / 8; }
+  .hero h1 {
+    font-size: 3.5em; } }
+
+/* Pagina Distinciones Individuales */
+.body4 {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.2), rgba(16, 16, 16, 0.2)), url(../img/messibalones.jpg);
+  background-size: cover;
+  max-width: 100%; }
+
+.col {
+  background: rgba(243, 239, 239, 0.7);
+  padding: 0.5em 20em; }
+
+.distinciones__items {
+  text-align: center;
+  color: #1e272e;
+  font-family: 'Roboto Serif', serif;
+  margin: 12px 0; }
+
+.container {
+  padding: 1.5em 4em; }

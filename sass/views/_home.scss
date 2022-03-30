@@ -1,0 +1,46 @@
+/* SECTION MAIN */
+
+.hero {
+    height: 90vh;
+    background-image: linear-gradient($fifth, $sixth), url(../img/Messiarg.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    & .info-content {
+        grid-column: 7 / 10;
+        grid-row: 3 / 7;
+        color: $fourth;
+    }
+    & h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    & h1 {
+        font-size: 5em;
+        color: $principal;
+    }
+    & p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+    }
+    & .btn:hover {
+        background-color: $principal;
+        color: $secondary;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* SECTION MAIN */
+
+    .hero .info-content {
+      grid-column: 2 / 10;
+      grid-row: 4 / 8;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+    }
+  }

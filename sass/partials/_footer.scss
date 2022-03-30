@@ -1,0 +1,15 @@
+/* SECTION FOOTER */
+
+footer {
+    background-color: $secondary;
+    & p {
+        color: $principal;
+        text-align: center;
+    }
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: $principal;
+}
