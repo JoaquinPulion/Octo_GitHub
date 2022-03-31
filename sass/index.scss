@@ -4,6 +4,10 @@
 /* GLOBALES */
 @import "./misc/normalize";
 
+/* HELPERS */
+@import "./misc/mixins";
+
+
 /* PARTIALS */
 @import "./partials/header";
 @import "./partials/footer";
@@ -11,3 +15,4 @@
 /* VIEWS */
 @import "./views/home";
 @import "./views/distinciones";
+@import "./views/biografia";

@@ -31,12 +31,16 @@
             bottom: -3px;
             transition: 0.4s ease-out;
         }
-        & a{
+        & .menu__link{
             text-decoration: none;
             color: $secondary;
             cursor: pointer;
             font-family: $font-secondary;
             font-size: 1.1rem;
+            &--active {
+                @extend .menu__link;
+                border-bottom: 2px solid crimson;
+            }
         }
         
     }
