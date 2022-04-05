@@ -26,9 +26,16 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2em;
     }
-    & .btn:hover {
-        background-color: $principal;
+    & .boton-bio:hover {
+        background-color: #fff;
         color: $secondary;
+    }
+    .boton-bio {
+        padding: 10px 20px;
+        background-color: $principal;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 3px 11px -5px rgba(202, 202, 36, .69);
     }
 }
 

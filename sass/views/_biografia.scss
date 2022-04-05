@@ -1,26 +1,96 @@
-.img-1 {
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-image: url(../img/infancia1.jpg);
-}
-.img-2 {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-image: url(../img/infancia2.jpg);
-}
-.img-3 {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-image: url(../img/infancia3.jpg);
+
+.body_historia {
+    font-family: $font-secondary;
+    
 }
 
-main {
-    max-width: 1080px;
+.wrapper {
+    background-color: #2e3b58;
+    background-image:linear-gradient(#2e3b58, #111520 );
+    color: #ffff;
+}
+
+.kode {
     margin: 0 auto;
-    .main-items {
-        @include flex(row, space-between, center, map-get($spacings, medium));
-    }
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.kode_title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+span {
+    color: $principal;
+}
+
+.kode img {
+    width: 450px;
+    border: 7px solid $principal;
+    grid-column: 3;
+    border-radius: 40px;
+}
+
+.about {
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    background-image: url(../img/barcapsg.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 90vh;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.about img {
+    width: 800px;
+    border: 7px solid $principal;
+}
+
+.about .about_content {
+    grid-column: 8 / 11;
+    grid-row: 1 / 8;
+    color: #ffff;
+    background-color: rgba(31, 41, 84, 0.6);
+    width: 500px;
+    height: 500px;
+}
+
+.divider {
+    height: 4px;
+    width: 195px;
+    background-color: $principal;
+    margin-top: 3px;
+    margin-bottom: 2em;
+}
+
+.seleccion {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    margin-top: 5px;
+    align-items: center;
+    background-color: #2e3b58;
+}
+
+.seleccion img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.seleccion_content {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+
+
+.seleccion_content h3 {
+    font-size: 3em;
+    color: aqua;
 }
