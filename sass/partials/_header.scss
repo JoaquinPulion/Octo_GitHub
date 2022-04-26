@@ -1,52 +1,14 @@
 /* HEADER & NAVBAR*/
 
 .navbar {
+    font-size: 18px;
+    font-family: $font-secondary;
     background-color: $principal;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
     align-items: center;
     background-image:linear-gradient($principal, $tertiary );
     
-    & .logo {
-        width: 60px;
-        grid-column: 2 / 3;
-        cursor: pointer;
-    }
-    & .menu {
-        grid-column: 3 / 6;
-        display: flex;
-        justify-content: space-around;
-        
-    }
-    & .menu li{
-        list-style: none;
-        position: relative;
-        &::before{
-            content: "";
-            height: 3px;
-            width: 0%;
-            background: $secondary;
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            transition: 0.4s ease-out;
-        }
-        & .menu__link{
-            text-decoration: none;
-            color: $secondary;
-            cursor: pointer;
-            font-family: $font-secondary;
-            font-size: 1.1rem;
-            &--active {
-                @extend .menu__link;
-                
-            }
-        }
-        
-    }
-    & .menu-bar {
-        display: none;
-    }
+
+
 }
 .navbar .menu li:hover::before{
     width: 100%;

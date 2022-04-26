@@ -1,0 +1,216 @@
+
+.body5 {
+    background-color: #2e3b58;
+}
+
+.rome {
+    padding-top: 4em;
+}
+
+.campeon-info {
+    margin-left: 6em;
+    margin-right: 6em;
+    
+}
+
+.campeon-info h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+
+.line1 {
+    height: 5px;
+    width: 100%;
+    background-color: #fe616a;
+    margin: 0;
+}
+
+.line2 {
+    height: 5px;
+    width: 100%;
+    background-color: #fe616a;
+    margin: 0;
+}
+
+.fcb1 {
+    display: flex;
+    gap: 12em;
+    text-align: center;
+    margin-left: 24em;
+    margin-top: 2em;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+
+.fcb1 h3 {
+    color: #fe616a;
+}
+
+.fcb1 img {
+    width: 95px;
+    transition: transform 0.5s;
+}
+
+.fcb2 img {
+    width: 95px;
+    background-size: cover;
+}
+
+.champion img {
+    width: 95px;
+    height: 155px;
+    margin: 12px auto;
+}
+
+.liga img {
+    width: 87px;
+    height: 110px;
+    margin: 50px auto;
+}
+
+.coparei img {
+    width: 87px;
+    margin: 7px auto;
+}
+
+.mund img {
+    width: 80px;
+    height: 170px;
+    margin: 6px auto;
+}
+
+.fcb2 {
+    display: flex;
+    text-align: center;
+    gap: 12em;
+    margin-left: 35em;
+    font-family: $font-secondary;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.fcb2 h3 {
+    color: #fe616a;
+}
+
+.fcb2 img {
+    width: 95px;
+    transition: transform 0.5s;
+}
+
+.speu img {
+    width: 80px;
+    height: 170px;
+    margin: 5px auto;
+}
+
+.spes img {
+    width: 80px;
+    height: 170px;
+    margin: 5px auto;
+}
+
+.rome .champion:hover img {
+    transform: scale(1.1);
+}
+
+.rome .liga:hover img {
+    transform: scale(1.1);
+}
+
+.rome .coparei:hover img {
+    transform: scale(1.1);
+}
+
+.rome .mund:hover img {
+    transform: scale(1.1);
+}
+
+.rome .speu:hover img {
+    transform: scale(1.1);
+}
+
+.rome .spes:hover img {
+    transform: scale(1.1);
+}
+
+.rome .messi {
+    width: 350px;
+}
+
+.arg1 {
+    display: flex;
+    gap: 8em;
+    text-align: center;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-family: $font-secondary;
+    font-weight: bold;
+    color: rgba(19,212,237,1);
+}
+
+.line3 {
+    height: 5px;
+    width: 100%;
+    background-color: rgba(19,212,237,1);
+    margin: 0;
+}
+
+.line4 {
+    height: 5px;
+    width: 100%;
+    background-color: rgba(19,212,237,1);
+    margin: 0;
+}
+
+.arg1 img {
+    width: 90px;
+    transition: transform 0.5s;
+}
+
+.copa-america img {
+    width: 80px;
+    height: 190px;
+    margin: 24px auto;
+}
+
+.sub20 img {
+    width: 80px;
+    height: 190px;
+    margin: 24px auto;
+}
+
+.medal img {
+    width: 80px;
+    height: 140px;
+    margin: 30px auto;
+}
+
+.copmund img {
+    width: 65px;
+    height: 140px;
+    margin: 46px auto;
+}
+
+.bs-as .copa-america:hover img {
+    transform: scale(1.1);
+}
+
+.bs-as .sub20:hover img {
+    transform: scale(1.1);
+}
+
+.bs-as .medal:hover img {
+    transform: scale(1.1);
+}
+
+.bs-as .copmund:hover img {
+    transform: scale(1.1);
+}
+
+.bs-as .messiarg {
+    width: 400px;
+}

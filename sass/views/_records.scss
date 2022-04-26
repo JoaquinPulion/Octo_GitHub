@@ -1,0 +1,61 @@
+/* SECTION MAIN */
+
+.body3 {
+    background-color: #2e3b58;
+}
+
+.god {
+    padding-top: 5em;
+}
+
+.records-info {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.records-info h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+
+.linediv1 {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+}
+
+.linediv2 {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    margin-left: 6em;
+    margin-right: 6em;
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 1vw;
+    color: #fff;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.carousel {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.list img {
+    width: 500px;
+    position: relative;
+
+}

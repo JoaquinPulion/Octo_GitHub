@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El Messías Web Page es una página donde se lo homenajea a Lionel Andrés Messi basándose en su biografía, Récords, Distinciones individuales y sus logros a nivel grupal.">
-    <meta name="keywords" content="">
-    <title>El Messías Web Page - Inicio</title>
+    <meta name="description" content="El Mesías Web Page es una página donde se lo homenajea a Lionel Andrés Messi basándose en su biografía, Récords, Distinciones individuales y sus logros a nivel grupal.">
+    <meta name="keywords" content="MESSI, FÚTBOL, BIOGRAFÍA, SELECCIÓN ARGENTINA">
+    <title>El Mesías Web Page - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,22 +15,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <img src="img/pngwing.com.png" class="logo" alt="messi logo">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link--active" href="index.html">Inicio</a></li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Records.html">Récords</a></li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Distinciones individuales.html">Distinciones individuales</a></li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Campeonatos.html">Campeonatos grupales</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-md-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/pngwing.com.png" alt="" width="70px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Records.html">Récords</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="Distinciones individuales.html">Distinciones individuales</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="Campeonatos.html">Campeonatos grupales</a>
+              </li>
             </ul>
-            <div class="menu-bar">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Inicio de Main -->
     <main class="hero">
@@ -43,6 +57,48 @@
             </a>
         </div>
     </main>
+    <div class="grid">
+        <div class="element1">
+            <h3>Leo y PSG</h3>
+            <p class="yosa"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque delectus, voluptate enim maxime reprehenderit</p>
+        </div>
+
+        <div class="nested-grid">
+            <div>
+                <img src="img/leotrain.jpeg" alt="" width="350px">
+         </div>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque delectus, voluptate enim maxime reprehenderit
+         </div>
+
+        <div class="nested-grid">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae numquam architecto quam dolor praesentium error reiciendis
+            <div>
+                <img src="img/leotrain3.jpeg" alt="" width="350px">
+         </div>
+        </div>
+        
+
+        <div class="nested-grid">
+            <div>
+                <img src="img/leogol16.jpeg" alt="" width="350px">
+         </div>
+         <div>
+             <h3>Leo y PSG</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque delectus, voluptate enim maxime reprehenderit
+        </div>
+        </div>
+
+        <div class="nested-grid">
+            <div>
+                <img src="img/tabla.jpeg" alt="" width="350px">
+         </div>
+         <div>
+             <h3>LEO Y PSG</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae numquam architecto quam dolor praesentium error reiciendis
+        </div>
+        </div>
+        
+    </div>
 <!-- Redes sociales -->
 <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
     <p class="fs-5 px-3 pt-3">Síguenos en nuestras redes</p>
@@ -52,5 +108,6 @@
         <a href=""><i class="bi bi-instagram"></i></a>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
