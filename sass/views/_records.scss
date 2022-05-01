@@ -47,6 +47,11 @@
     color: #fff;
     align-items: center;
     font-size: 1.1em;
+    & img {
+        width: 500px;
+        position: relative;
+    
+    }
 }
 
 .carousel {
@@ -54,8 +59,23 @@
     padding-bottom: 1em;
 }
 
-.list img {
-    width: 500px;
-    position: relative;
-
+@media only screen and (max-width: 840px) {
+    .list {
+        display: block;
+        padding-top: 1em;
+        padding-bottom: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+        font-family: $font-secondary;
+        font-weight: 600;
+        font-size: 1vw;
+        color: #fff;
+        align-items: center;
+        font-size: 1.1em;
+        & img {
+            width: 300px;
+            position: relative;
+        
+        }
+    }
 }

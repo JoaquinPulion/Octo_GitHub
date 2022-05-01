@@ -7,33 +7,9 @@
     align-items: center;
     background-image:linear-gradient($principal, $tertiary );
     
-
-
 }
 .navbar .menu li:hover::before{
     width: 100%;
 }
 /* MEDIAQUERIES */
 
-@media only screen and (max-width: 700px) {
-    .navbar {
-      position: relative;
-    }
-    
-    .navbar .menu-bar {
-      display: block;
-      grid-column: 8 / 9;
-      font-size: 2em;
-      cursor: pointer;
-    }
-    .navbar .menu {
-      position: absolute;
-      width: 100%;
-      height: 60vh;
-      display: grid;
-      align-items: center;
-      background-color: $principal;
-      margin-top: 35em;
-      transform:  translateX(100%);
-    }
-  }

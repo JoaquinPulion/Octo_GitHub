@@ -1,5 +1,7 @@
 /* SECTION MAIN */
-
+.index{
+    background-color: #2e3b58;
+}
 .hero {
     height: 90vh;
     background-image: linear-gradient($fifth, $sixth), url(../img/Messiarg.jpg);
@@ -39,29 +41,129 @@
     }
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 1em;
+.news h1 {
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    font-size: 3em;
+    font-family: $font-secondary;
+    font-weight: bold;
+    color: #fe616a;
 }
-.element1 {
-    grid-row: 1/3;
-    padding: 1em;
-    background: #2e3b58;
-    text-align: center;
-    background-image: url(../img/leoclermont1.jpeg);
-    background-size: cover;
-    color: #fff;
+
+.line-news {
+    height: 5px;
+    width: 50%;
+    background-color: #fff;
+    margin: 0;
 }
-.nested-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: start;
-    background-size: cover;
-    background: #2e3b58;
+
+
+.post-list {
+    display: flex;
+    min-height: 60vh;
     align-items: center;
-    color: #fff;
+    justify-content: center;
+    padding: 30px 15px;
+    background-color: #2e3b58;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.post-img-1 {
+    background: url(../img/39titulos.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    transition: .2s;
+}
+.post-img-2 {
+    background: url(../img/campeonligue.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    transition: .2s;
+}
+.post-img-3 {
+    background: url(../img/podriacampeon.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    transition: .2s;
+}
+.post-img-4 {
+    background: url(../img/leclassique.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    transition: .2s;
+}
+
+.post {
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .50);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.post-body {
+    padding: 15px;
+    text-align: center;
+    & h2 {
+        margin-bottom: 20px;
+        color: #fe616a;
+    }
+    & p {
+        line-height:1.5;
+    }
+}
+
+.post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .60);
+}
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $fourth;
+}
+
+.post:hover .post-img-1{
+    transform: scale(1.1);
+}
+.post:hover .post-img-2{
+    transform: scale(1.1);
+}
+.post:hover .post-img-3{
+    transform: scale(1.1);
+}
+.post:hover .post-img-4{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 840px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .post-header {
+        height: 400px;
+    }
+    .post-list {
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media only screen and (max-width: 700px) {

@@ -1,37 +1,39 @@
 
 .body5 {
-    background-color: #2e3b58;
+    background-color: $nine;
 }
 
 .rome {
     padding-top: 4em;
+    & .messi {
+        width: 350px;
+    }
 }
 
 .campeon-info {
     margin-left: 6em;
     margin-right: 6em;
+    & h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 4em;
+        font-family: $font-secondary;
+        font-weight: bold;
+    }
     
-}
-
-.campeon-info h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 4em;
-    font-family: $font-secondary;
-    font-weight: bold;
 }
 
 .line1 {
     height: 5px;
     width: 100%;
-    background-color: #fe616a;
+    background-color: $eleven;
     margin: 0;
 }
 
 .line2 {
     height: 5px;
     width: 100%;
-    background-color: #fe616a;
+    background-color: $eleven;
     margin: 0;
 }
 
@@ -43,20 +45,14 @@
     margin-top: 2em;
     font-family: $font-secondary;
     font-weight: bold;
-}
-
-.fcb1 h3 {
-    color: #fe616a;
-}
-
-.fcb1 img {
-    width: 95px;
-    transition: transform 0.5s;
-}
-
-.fcb2 img {
-    width: 95px;
-    background-size: cover;
+    color: $eleven;
+    & h3 {
+        color: $eleven;
+    }
+    & img {
+        width: 95px;
+        transition: transform 0.5s;
+    }
 }
 
 .champion img {
@@ -90,15 +86,14 @@
     font-family: $font-secondary;
     font-weight: bold;
     margin-top: 1em;
-}
-
-.fcb2 h3 {
-    color: #fe616a;
-}
-
-.fcb2 img {
-    width: 95px;
-    transition: transform 0.5s;
+    color: $eleven;
+    & h3 {
+        color: $eleven;
+    }
+    & img {
+        width: 95px;
+        transition: transform 0.5s;
+    }
 }
 
 .speu img {
@@ -137,9 +132,7 @@
     transform: scale(1.1);
 }
 
-.rome .messi {
-    width: 350px;
-}
+
 
 .arg1 {
     display: flex;
@@ -213,4 +206,34 @@
 
 .bs-as .messiarg {
     width: 400px;
+}
+@media only screen and (max-width: 840px){
+.fcb1 {
+    display: block;
+    gap: 0em;
+    text-align: center;
+    margin-left: 0em;
+    margin-top: 0em;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+.campeon-info h1 {
+    text-align: justify;
+    color: #fff;
+    font-size: 2em;
+    font-family: $font-secondary;
+    font-weight: bold;
+}
+.fcb2 {
+    display: block;
+    text-align: center;
+    gap: 12em;
+    margin-left: 0em;
+    font-family: $font-secondary;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.arg1 {
+    display: block;
+}
 }

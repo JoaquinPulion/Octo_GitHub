@@ -21,3 +21,10 @@
 .container {
     padding: 1.5em 4em;
 }
+
+@media only screen and (max-width: 840px) {
+    .col {
+        background: $eighth;
+        padding: 0em 1em;
+    }
+}

@@ -5,9 +5,9 @@
 }
 
 .wrapper {
-    background-color: #2e3b58;
-    background-image:linear-gradient(#2e3b58, #111520 );
-    color: #ffff;
+    background-color: $nine;
+    background-image:linear-gradient($nine, #111520 );
+    color: $fourth;
 }
 
 .kode {
@@ -17,6 +17,12 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     align-items: center;
+    & img {
+        width: 450px;
+        border: 7px solid $principal;
+        grid-column: 3;
+        border-radius: 40px;
+    }
 }
 
 .kode_title {
@@ -26,13 +32,6 @@
 
 span {
     color: $principal;
-}
-
-.kode img {
-    width: 450px;
-    border: 7px solid $principal;
-    grid-column: 3;
-    border-radius: 40px;
 }
 
 .about {
@@ -45,20 +44,19 @@ span {
     height: 90vh;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(8,1fr);
-}
-
-.about img {
-    width: 800px;
-    border: 7px solid $principal;
-}
-
-.about .about_content {
-    grid-column: 8 / 11;
-    grid-row: 1 / 8;
-    color: #ffff;
-    background-color: rgba(31, 41, 84, 0.6);
-    width: 500px;
-    height: 500px;
+    & img {
+        width: 800px;
+        border: 7px solid $principal;
+    }
+    & .about_content {
+        grid-column: 8 / 11;
+        grid-row: 2 / 8;
+        color: $fourth;
+        background-color: rgba(31, 41, 84, 0.6);
+        width: 600px;
+        height: 744px;
+        margin-right: 40px;
+    }
 }
 
 .divider {
@@ -75,22 +73,68 @@ span {
     width: 100vw;
     margin-top: 5px;
     align-items: center;
-    background-color: #2e3b58;
-}
-
-.seleccion img {
-    width: 100%;
-    grid-column: 1/5;
+    background-color: $nine;
+    color: $fourth;
+    & img {
+        width: 100%;
+        grid-column: 1/5;
+    }
 }
 
 .seleccion_content {
     grid-column: 5/10;
     padding: 3em;
+    & h3 {
+        font-size: 3em;
+        color: $ten;
+    }
 }
 
+@media only screen and (max-width: 840px) {
 
-
-.seleccion_content h3 {
-    font-size: 3em;
-    color: aqua;
+    .about {
+        display: grid;
+        width: 100vw;
+        align-items: center;
+        background-image: url(../img/barcapsg.jpg);
+        background-size: cover;
+        max-width: 100%;
+        height: 140vh;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+        & img {
+            width: 800px;
+            border: 7px solid $principal;
+        }
+        & .about_content {
+            grid-column: 8 / 11;
+            grid-row: 2 / 8;
+            color: $fourth;
+            background-color: rgba(31, 41, 84, 0.6);
+            width: 390px;
+            height: 1050px;
+            margin-right: 40px;
+        }
+    }
+    
+    .kode{
+        display: block;
+        height: 135vh;
+        & img {
+           align-items: center;
+        }
+    }
+    .seleccion {
+        display: block;
+    }
+    .kode img {
+        width: 200px;
+        border: 7px solid $principal;
+        grid-column: 2;
+        border-radius: 40px;
+    }
+    .about .about_content {
+        grid-column: 8 / 11;
+        grid-row: 2 / 8;
+    }
 }
